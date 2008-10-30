@@ -22,4 +22,6 @@ set hlsearch
  set nobackup
  "自动缩排
  set ai
+ "置粘贴模式
+ set paste
 
