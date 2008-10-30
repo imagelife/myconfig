@@ -87,6 +87,7 @@ alias abs='sudo abs'
 hash -d X="/etc/X11"
 hash -d pkg="/home/packages"
 hash -d labs="/var/abs/local"
+hash -d wp="/home/xyx/workplace"
 ##for Emacs在Emacs终端中使用Zsh的一些设置 不推荐在Emacs中使用它
 #if [[ "$TERM" == "dumb" ]]; then
 #setopt No_zle
