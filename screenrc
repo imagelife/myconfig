@@ -9,8 +9,17 @@ hardstatus alwayslastline
 hardstatus string '%{= kG}[ %{G}%H %{g}][%= %{= kw}%?%-Lw%?%{r}(%{W}%n*%f%t%?(%u)%?%{r})%{w}%?%+Lw%?%?%= %{g}][%{B} %m-%d %{W}%c %{g}]'
 #disable welcome message
 startup_message off
-# bind F10 to Screen's quit command
- bindkey -k k; quit
+#keybingiings
+#bindkey -k kh select 0         # Home = screen 0
+#bindkey -k k1 select 0         # F1 = screen 0
+#bindkey -k k2 select 1         # F2 = screen 1
+#bindkey -k k3 select 2         # F3 = screen 2
+#bindkey -k k4 select 3         # F4 = screen 3
+#bindkey -k k5 select 4         # F5 = screen 4
+#bindkey -k k6 select 5         # F6 = screen 5
+bindkey -k k; quit        #F10 quit screen
 #auto clear screen when quit vim or nano
 altscreen on
+#encoding setting
+encoding UTF-8 GBK
 
