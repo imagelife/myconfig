@@ -1,0 +1,16 @@
+###########################
+###setting for screen###
+###########################
+#Use 256 Colors with Rxvt-Unicode
+terminfo rxvt-unicode 'Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm'
+#Informative statusbar 
+hardstatus off
+hardstatus alwayslastline
+hardstatus string '%{= kG}[ %{G}%H %{g}][%= %{= kw}%?%-Lw%?%{r}(%{W}%n*%f%t%?(%u)%?%{r})%{w}%?%+Lw%?%?%= %{g}][%{B} %m-%d %{W}%c %{g}]'
+#disable welcome message
+startup_message off
+# bind F10 to Screen's quit command
+ bindkey -k k; quit
+#auto clear screen when quit vim or nano
+altscreen on
+
