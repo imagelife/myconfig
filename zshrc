@@ -1,5 +1,10 @@
 #Options for zsh
-#历史纪录的配置
+#普通命令提示符，在控制台下可以正常显示，如需使用取消注释，并把底部有关提示符的语句注释掉
+##RPROMPT='%/'
+PROMPT='%{[36m%}%n%{[35m%}@%{[34m%}%M %{[33m%}%D %T  %{[32m%}%/ 
+%{[31m%}>>%{[m%}'
+
+#关于历史纪录的配置
 # number of lines kept in history
 export HISTSIZE=1000
 # # number of lines saved in the history after logout
@@ -14,7 +19,7 @@ limit coredumpsize 0
 
 
 #Emacs风格键绑定
-#bindkey -e
+bindkey -e
 #设置DEL键为向后删除
 bindkey "\e[3~" delete-char
 
@@ -87,7 +92,6 @@ alias abs='sudo abs'
 hash -d X="/etc/X11"
 hash -d pkg="/home/packages"
 hash -d labs="/var/abs/local"
-hash -d wp="/home/xyx/workplace"
 ##for Emacs在Emacs终端中使用Zsh的一些设置 不推荐在Emacs中使用它
 #if [[ "$TERM" == "dumb" ]]; then
 #setopt No_zle
@@ -243,4 +247,3 @@ $PR_CYAN$PR_SHIFT_IN$PR_HBAR$PR_SHIFT_OUT$PR_NO_COLOUR '
 }
 
 setprompt
-
