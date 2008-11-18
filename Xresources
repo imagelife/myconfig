@@ -1,0 +1,49 @@
+!=============================================================================
+!! RXVT-unicode setting
+!!=============================================================================
+!窗口标题
+URxvt.title:xyx@imagelife
+!设置字体分辨率
+Xft.dpi:96
+URxvt.geometry:80x32
+!设置字体
+URxvt.font:xft:DejaVu Sans Mono:size=10,xft:Microsoft YaHei:size=10 
+!颜色
+URxvt.background:black
+URxvt.foreground:white
+URxvt.cursorBlink:true
+URxvt.cursorColor:orange
+!滚动条
+URxvt.scrollBar:True
+URxvt.scrollBar_right:True
+URxvt.scrollBar_floating: False
+URxvt.scrollstyle:plain
+!屏幕缓冲
+URxvt.saveLines:10000
+URxvt.color12:DodgerBlue
+URxvt.menu:/etc/X11/rxvt.menu
+URxvt.preeditType:Root
+!输入法设置
+URxvt.inputMethod:xim  
+URxvt.imFont:Microsoft YaHei
+!启用tab功能
+URxvt.perl-ext-common: default,tabbed
+!URxvt.transparent: True
+URxvt.urlLauncher: firefox
+!color
+URxvt.color0: #000000
+URxvt.color1: #9e1828
+URxvt.color2: #249424
+URxvt.color3: #968a38
+URxvt.color4: #3456ac
+URxvt.color5: #963c59
+URxvt.color6: #238d8e
+URxvt.color7: #bebebe
+URxvt.color8: #666666
+URxvt.color9: #cf6171
+URxvt.color10: #37de37
+URxvt.color11: #fff796
+!URxvt.color12: #527ce7
+URxvt.color13: #cf9ebe
+URxvt.color14: #30c2c4
+URxvt.color15: #ffffff
