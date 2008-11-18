@@ -21,5 +21,10 @@ bindkey -k k; quit        #F10 quit screen
 #auto clear screen when quit vim or nano
 altscreen on
 #encoding setting
-encoding UTF-8 GBK
-
+#encoding GBK UTF-8
+defutf8 on
+#utf8 on
+#screen auto quit when all apps quit 
+autodetach on
+#setting default shell
+shell zsh
