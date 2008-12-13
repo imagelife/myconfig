@@ -3,7 +3,7 @@
 ##RPROMPT='%/'
 PROMPT='%{[36m%}%n%{[35m%}@%{[34m%}%M %{[33m%}%D %T  %{[32m%}%/ 
 %{[31m%}>>%{[m%}'
-
+ export OOO_FORCE_DESKTOP=gnome
 #关于历史纪录的配置
 # number of lines kept in history
 export HISTSIZE=1000
@@ -85,13 +85,15 @@ alias mv='mv -i'
 #alias rm='rm -i'
 alias ls='ls -F --color=auto'
 alias grep='grep --color=auto'
-alias pacman='pacman-color'
+alias pacman='sudo pacman'
 alias syu='sudo pacman -Syu'
 alias abs='sudo abs'
+alias vpnc='sudo vpnc --enable-1des'
+alias fbterm='LC_CTYPE=zh_CN.UTF-8 fbterm 2>/dev/null'
 #路径别名 进入相应的路径时只要 cd ~xxx
 hash -d X="/etc/X11"
 hash -d pkg="/home/packages"
-hash -d labs="/var/abs/local"
+#hash -d labs="/var/abs/local"
 ##for Emacs在Emacs终端中使用Zsh的一些设置 不推荐在Emacs中使用它
 #if [[ "$TERM" == "dumb" ]]; then
 #setopt No_zle
@@ -247,3 +249,9 @@ $PR_CYAN$PR_SHIFT_IN$PR_HBAR$PR_SHIFT_OUT$PR_NO_COLOUR '
 }
 
 setprompt
+## =======================
+###    Auto login to WMs
+### =======================
+if [[ -z "$DISPLAY" ]] && [[ $(tty) = /dev/vc/1 ]]; then
+	    exec startx
+    fi
