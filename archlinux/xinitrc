@@ -1,0 +1,35 @@
+#!/bin/sh
+
+#
+# ~/.xinitrc
+#
+# Executed by startx (run your window manager from here)
+##fcitx env settiing
+export LANG=zh_CN.UTF-8
+#ibus setting
+export GTK_IM_MODULE=ibus
+export XMODIFIERS=@im=ibus
+export QT_IM_MODULE=ibus
+ibus-daemon --xim &
+#export GTK_IM_MODULE=xim
+#export QT_IM_MODULE=xim
+#export XMODIFIERS="@im=fcitx"
+#fcitx &
+#inital urxvt's setting
+xcompmgr -Ss -n -Cc -fF -I-10 -O-10 -D1 -t-3 -l-4 -r4 &
+#xcompmgr &
+xrdb .Xresources
+# start awesome
+#exec awesome
+#exec gnome-session
+#KDE
+# exec startkde
+ exec startxfce4
+#  exec xfce4-session
+# exec icewm
+# exec openbox
+# exec blackbox
+# exec fluxbox
+# exec ratpoison
+# exec dwm
+# ... or any other WM of your choosing ...
