@@ -5,11 +5,11 @@
 #
 # Executed by startx (run your window manager from here)
 ##fcitx
-export LANG=zh_CN.utf8
-export GTK_IM_MODULE=xim
-export QT_IM_MODULE=xim
-export XMODIFIERS="@im=fcitx"
-fcitx &
+#export LANG=zh_CN.utf8
+#export GTK_IM_MODULE=xim
+#export QT_IM_MODULE=xim
+#export XMODIFIERS="@im=fcitx"
+#fcitx &
 
 ##ibus
 #export GTK_IM_MODULE=ibus
