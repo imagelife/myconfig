@@ -1,0 +1,5 @@
+#!/bin/bash
+tmpfile=$(mktemp -u).png
+scrot -s $tmpfile
+targetfile=$(zenity --title="save screenshot" --file-selection --save --confirm-overwrite 2> /dev/null)
+mv $tmpfile $targetfile.png
