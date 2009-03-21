@@ -1,0 +1,20 @@
+# 
+# /etc/fstab: static file system information
+#
+# <file system>        <dir>         <type>    <options>          <dump> <pass>
+none                   /dev/pts      devpts    defaults            0      0
+none                   /dev/shm      tmpfs     defaults            0      0
+none /proc/bus/usb usbfs auto,busgid=108,busmode=0775,devgid=108,devmode=0664 0 0
+
+
+/dev/cdrom             /media/cd   auto    ro,user,noauto,unhide,iocharset=utf8   0      0
+/dev/dvd               /media/dvd  auto    ro,user,noauto,unhide,iocharset=utf8   0      0
+#/dev/fd0               /media/fl   auto    user,noauto             0      0
+
+/dev/sda10 swap swap defaults 0 0
+UUID=81201e0b-cf83-4aac-b080-679e17781518 /media ext4 defaults,noatime,barrier=0 0 1
+UUID=9e99d2c2-8148-46b8-a2a4-ac40b0a54278 /boot ext4 defaults,noatime,barrier=0 0 1
+UUID=eef1c01c-7c2f-4a7b-9588-b27c02ec6ca5 / ext4 defaults,noatime,barrier=0 0 1
+UUID=f9acdd2c-f3ed-4bf1-b899-2e1be5117be0 /home ext4 defaults 0 1
+/dev/sda1                     /media/windows_c ntfs-3g defaults,users,uid=1000,gid=100,fmask=0113,dmask=0002,locale=zh_CN.utf8  0 0 
+/dev/sda5                     /media/other ntfs-3g defaults,users,uid=1000,gid=100,fmask=0113,dmask=0002,locale=zh_CN.utf8 0 0        
